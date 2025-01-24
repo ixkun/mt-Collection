@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# 定义集合
+owners=(1419341085 812104302 85520861 867320942 1749396360 1529495918 1440731487 969602069 923278489 542636498 40053870 1065167882 1815288869 1153985303 581609765 702488708 1672815415 1830956531 1899755219 1843314589 1098046061 509498434 1931361636 1907521895)
+
+# 遍历集合中的每个元素
+for owner in "${owners[@]}"
+do
+  # 执行curl命令，替换ownerId
+  curl 'https://mbo.sankuai.com/gateway-proxy/blacklist/addOperationBlacklistItem?ssoId=21083698' \
+    -H 'Accept: application/json, text/plain, */*' \
+    -H 'Accept-Language: zh-CN,zh;q=0.9' \
+    -H 'Cache-Control: no-cache' \
+    -H 'Connection: keep-alive' \
+    -H 'Content-Type: application/json;charset=UTF-8' \
+    -H 'Cookie: moa_deviceId=FC38B4A58517506588D72D45D85ECAC6; uu=a13c07c0-05ff-11ef-97a5-f7da9f033f24; cid=1; ai=1; AWPTALOS30702=; _lxsdk_cuid=18aab59f93ec8-0b7df3cb442a92-19525634-1ea000-18aab59f93ec8; _lxsdk=18aab59f93ec8-0b7df3cb442a92-19525634-1ea000-18aab59f93ec8; s_u_745896=1OLQP5WPc2dJI9yxafWBYA==; csrf=XF64f28mXHemiRReaa4NhZBjnwXFYAzK; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%22193b8fb06cf449-0f3d1a566307608-1e525636-2007040-193b8fb06d07e6%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%7D%2C%22identities%22%3A%22eyIkaWRlbnRpdHlfY29va2llX2lkIjoiMTkzYjhmYjA2Y2Y0NDktMGYzZDFhNTY2MzA3NjA4LTFlNTI1NjM2LTIwMDcwNDAtMTkzYjhmYjA2ZDA3ZTYifQ%3D%3D%22%2C%22history_login_id%22%3A%7B%22name%22%3A%22%22%2C%22value%22%3A%22%22%7D%2C%22%24device_id%22%3A%22193b8fb06cf449-0f3d1a566307608-1e525636-2007040-193b8fb06d07e6%22%7D; u=2828725103; WEBDFPID=ux87765u525y5vu2ywz75y9y50y69zvx81zzy40uu27979589z9832wv-1737704107823-1695091915582SUSSAOQ75613c134b6a252faa6802015be905514112; _gw_ab_call_30962_44=TRUE; _gw_ab_30962_44=616; ssoid=eAGFj00rRFEchzuRxqw0K1ndhcWYMs79n7f_tWJmvCy9lbLROeeek1JmMSObWcwoykjCihWaUhSx8gUUysbKF8BVPgEbJGvr39Ov50mRrqv39XSwuf20dQ-Q9o5aHyOXejBAFJ6j8UJ4zSlSA1LmEDyC4w6iqPBJMn2zzkxbt-Rqo0WGBT4sUIRKUCkQSwpKXJRQjBSHizLYa54-PkCWwL_H-KM01Dm-9nGzcwcTb_Xk9RZWSS7dMTlVLMcuk3lunSSXRy8bZ6-HjeS8lVw0utuD-vV-X_YX3iWpP7EDkg8jGToVMcaUAB8aEPy7R8axjQ1grOZD9b2wH0wBPya9K87UFHgBTjvmrOTIQk0RQ7QsDr2JmWZzQaSkRYfG-hxypnmkmWGCRpRTa5nSq6RnoKyXqwuQpwPaWlep9FfLi24pPzYy0yRtlUr5C459e9I**eAENycEBwCAIA8CVEIqGcQjC_iPY-15dMQOh9K0NRDp4EhbDT9RLqqOK1-Qs9T3zN1drexL0BzmyEek**amsuYeHM-LWBnNwj7z1MXRR5VMluwTTvzlI_Y8UZiKXpaJpJaF7A5i99FAKYNjz82FIywfdTU8HAHwOtyXX4TQ**MjEwODM2OTgsd2JfeHVrdW4wNCzlvpDlnaQsd2JfeHVrdW4wNEBtZWl0dWFuLmNvbSwxLDM0MDg1MzgyLDE3Mzc4Nzk4NDg4NDM; fe0cfd846a_ssoid=eAGFj00rRFEchzuRxqw0K1ndhcWYMs79n7f_tWJmvCy9lbLROeeek1JmMSObWcwoykjCihWaUhSx8gUUysbKF8BVPgEbJGvr39Ov50mRrqv39XSwuf20dQ-Q9o5aHyOXejBAFJ6j8UJ4zSlSA1LmEDyC4w6iqPBJMn2zzkxbt-Rqo0WGBT4sUIRKUCkQSwpKXJRQjBSHizLYa54-PkCWwL_H-KM01Dm-9nGzcwcTb_Xk9RZWSS7dMTlVLMcuk3lunSSXRy8bZ6-HjeS8lVw0utuD-vV-X_YX3iWpP7EDkg8jGToVMcaUAB8aEPy7R8axjQ1grOZD9b2wH0wBPya9K87UFHgBTjvmrOTIQk0RQ7QsDr2JmWZzQaSkRYfG-hxypnmkmWGCRpRTa5nSq6RnoKyXqwuQpwPaWlep9FfLi24pPzYy0yRtlUr5C459e9I**eAENycEBwCAIA8CVEIqGcQjC_iPY-15dMQOh9K0NRDp4EhbDT9RLqqOK1-Qs9T3zN1drexL0BzmyEek**amsuYeHM-LWBnNwj7z1MXRR5VMluwTTvzlI_Y8UZiKXpaJpJaF7A5i99FAKYNjz82FIywfdTU8HAHwOtyXX4TQ**MjEwODM2OTgsd2JfeHVrdW4wNCzlvpDlnaQsd2JfeHVrdW4wNEBtZWl0dWFuLmNvbSwxLDM0MDg1MzgyLDE3Mzc4Nzk4NDg4NDM; s_m_id_3299326472=AwMAAAA5AgAAAAIAAAE9AAAALP3NbSgmHjs5TAa8RPEGuhEFswD3Nnmb4atJ8MXVVLnAZ3ue7eByOyWAzxCVAAAAJG/PVwmTYBCGcXSM/I9gsWIPPhn3TCN6rPVYU5dF8d95xMSIWA==; logan_session_token=ndyhkbab1uccmf3hvz5j; _lxsdk_s=194960f427e-544-951-8c8%7C%7C39' \
+    -H 'Origin: https://mbo.sankuai.com' \
+    -H 'Pragma: no-cache' \
+    -H 'Referer: https://mbo.sankuai.com/index.html' \
+    -H 'Sec-Fetch-Dest: empty' \
+    -H 'Sec-Fetch-Mode: cors' \
+    -H 'Sec-Fetch-Site: same-origin' \
+    -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' \
+    -H 'sec-ch-ua: "Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"' \
+    -H 'sec-ch-ua-mobile: ?0' \
+    -H 'sec-ch-ua-platform: "macOS"' \
+    -H 'swimlane: wbxukun04-jamms' \
+    -H 'x-requested-with: XMLHttpRequest' \
+    --data-raw "{\"itemId\":\"\",\"ownerType\":2,\"ownerId\":\"$owner\",\"userType\":2,\"itemValue\":\"doNotGetPhone\",\"status\":\"\",\"level\":1,\"startTime\":1737684936684,\"endTime\":1737684938898,\"partnerId\":5,\"ssoId\":21083698}"
+
+  echo "Completed request for ownerId: $owner"
+  
+  # 可选：在请求之间添加延迟，以避免过快发送请求
+  sleep 1
+done
